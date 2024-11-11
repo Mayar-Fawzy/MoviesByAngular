@@ -1,0 +1,35 @@
+
+<div class="container py-5">
+    <form [formGroup]="searchForm" (keyup)="search()">
+    <div class="inputt ">
+          <label for="searchInput" ></label>
+    <input  autocomplete="off"  formControlName="searchInput"  placeholder="Search Movies...." type="search" class="form-control p-3 position-relative" id="searchInput">
+    <i class="fas fs-2 fa-search icn" style="color: gray;"></i>
+    </div>
+  </form>
+</div> 
+    
+      <div *ngIf="MoviesSearched.length > 0" class="contennt row">
+        <div class="contennt row py-2">
+          <div *ngFor="let movie of MoviesSearched" class="col-md-3 cardd">
+              <a [routerLink]="['/movies-details', movie.id]">
+                <div class="movie position-relative">
+                  <img
+                    [src]="imgprefix + movie.poster_path"
+                    class="w-100 " style="border-radius: 50px;"
+                    alt="movie.title"
+                  />
+                  <h3 class="h5 fw-bolder p-2">{{ movie.title }}</h3>
+                  <h5 class="ClickMore text-center">Click For more</h5>
+                </div>
+              </a>
+            </div>
+      </div>
+      </div>
+      <ng-template #noResultsTemplate>
+        <div class="notFound" role="alert">
+  
+              <p>        No results found.
+              </p>
+        </div>
+      </ng-template>

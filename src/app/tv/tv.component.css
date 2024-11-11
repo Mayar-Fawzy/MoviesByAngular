@@ -1,0 +1,68 @@
+.Tv:hover {
+  cursor: pointer;
+}
+.Tv:hover img {
+  filter: blur(9px);
+}
+.Tv:hover .ClickMore {
+  opacity: 1;
+}
+
+.h5 {
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+.ClickMore {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  opacity: 0;
+  font-weight: 800;
+}
+
+.footer {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* For desktop: */
+/* .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+ */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 666px) {
+  .cardd {
+    width: 100%;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 760px) and (max-width: 950px) {
+  .cardd {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 950px) and (max-width: 1010px) {
+  .cardd {
+    width: 33.33%;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1010px) and (max-width: 1200px) {
+  .cardd {
+    width: 25%;
+  }
+}/*# sourceMappingURL=tv.component.css.map */

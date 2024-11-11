@@ -1,0 +1,141 @@
+.row {
+  box-shadow: 10px;
+}
+
+.container {
+  filter: brightness(0.5);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+}
+
+li {
+  background-color: gray;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+}
+
+ul {
+  margin-left: -50px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.content {
+  margin: 10px;
+}
+
+span {
+  color: rgb(36, 189, 189);
+}
+
+.showFilm {
+  background-color: rgb(53, 158, 182);
+  padding: 10px;
+  margin-top: 100px;
+  border-radius: 50px;
+  color: white;
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.arrow {
+  display: inline-block;
+  animation: moveLeftRight 1s infinite alternate;
+}
+
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+  .rescontantwriten {
+    margin: 10px;
+  }
+  .rescontantwriten {
+    margin-left: 0px;
+  }
+  img {
+    height: 90vh;
+    width: 100vw;
+  }
+  .rescontant {
+    width: 77%;
+    margin-left: 12px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 844px) {
+  .rescontantwriten {
+    margin: 10px;
+  }
+  .rescontantwriten {
+    margin-left: 0px;
+  }
+  img {
+    height: 90vh;
+    width: 100vw;
+  }
+  .rescontant {
+    width: 77%;
+    margin-left: 12px;
+  }
+}
+@media only screen and (min-width: 844px) and (max-width: 1010px) {
+  img {
+    height: 60vh;
+    width: 60vw;
+  }
+  .rescontantwriten {
+    width: 90%;
+    margin-left: 160px;
+  }
+  .rescontant {
+    width: 70%;
+    margin-left: 150px;
+  }
+  .row {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 922px) and (max-width: 1005px) {
+  img {
+    height: 90vh;
+    width: 90vw;
+  }
+  .rescontantwriten {
+    width: 90%;
+  }
+  .rescontant {
+    width: 90%;
+    margin-left: 150px;
+  }
+  .row {
+    width: 70%;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1005px) and (max-width: 1160px) {
+  .rescontantwriten {
+    width: 100%;
+  }
+  img {
+    height: 50vh;
+    width: 50vw;
+  }
+  .rescontant {
+    width: 50%;
+    margin-left: 270px;
+  }
+  .row {
+    width: 90%;
+  }
+}/*# sourceMappingURL=tv-details.component.css.map */
